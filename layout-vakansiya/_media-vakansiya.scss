@@ -1,0 +1,28 @@
+// Tablet 950px
+@media (max-width: 950px){
+    
+}
+
+
+// Phone 768px
+@media (max-width:768px){
+    .vakansiya-info {
+
+        .cards {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+    }
+}
+
+
+// Small phone 460px
+@media (max-width:460px){
+    .vakansiya-info {
+
+        .cards {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+        }
+    }
+}

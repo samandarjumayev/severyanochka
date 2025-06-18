@@ -1,0 +1,39 @@
+// utils
+@import './utils/variables';
+
+// base
+@import './base/reset';
+
+// components
+@import './components/buttons';
+
+// layouts
+@import './layout/header';
+@import './layout/banner';
+@import './layout/aksiya';
+@import './layout/novinki';
+@import './layout/pokupali';
+@import './layout/spetsialniye';
+@import './layout/nash-magazin';
+@import './layout/stat';
+@import './layout/footer';
+
+// Kirish layaouts
+@import './layout/kirish';
+
+
+// Page Вакансии layouts
+@import './layout-vakansiya/vakansiya';
+
+// Page Контакты layouts
+@import './layout-kontakt/kontakt';
+
+// Page О компании layouts
+@import './layout-o-kompani/o-nas';
+
+
+
+// Medias
+@import './layout/media';
+@import './layout-vakansiya/media-vakansiya';
+@import './layout-kontakt/media-kontakt';

@@ -1,0 +1,29 @@
+// Phone
+@media (max-width: 768px){
+    .kontakt-info {
+
+        .empty-space {
+            height: 50px;
+        }
+
+        .filial {
+            gap: 10px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+
+            ul {
+                li {
+                    font-size: 14px;
+
+                    img {
+                        width: 60%;
+                    }
+
+                    i {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

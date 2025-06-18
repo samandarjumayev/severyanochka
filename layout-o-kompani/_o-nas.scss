@@ -1,0 +1,57 @@
+.o-nas {
+    padding: 20px 0;
+}
+.o-nas-info {
+    .navigatsiya {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        color: $text-color;
+        cursor: context-menu;
+
+        &>a {
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+
+            i {
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .kompani {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .kompani-left{
+            max-width: 40%;
+
+            &>h2 {
+                font-size: 47px;
+                color: $text-color;
+                margin-bottom: 15px;
+            }
+
+            &>p {
+                color: rgb(236, 67, 0);
+                font-weight: 900;
+                line-height: 23px;
+            }
+        }
+
+        .kompani-right {
+            background: url(../images/o-nas-back.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            max-width: 60%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
