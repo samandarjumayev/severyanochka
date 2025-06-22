@@ -1,0 +1,50 @@
+// Tablet 950px
+@media (max-width: 950px){
+    .vse-info {
+        
+        .cards {
+            grid-template-columns: repeat(3, 1fr);
+
+            .card:nth-child(4){
+                display: none;
+            }
+        }
+    }
+}
+
+
+// Phone 768px
+@media (max-width: 768px){
+    .vse {
+        height: auto;
+        padding: 15px 0;
+    }
+    .vse-info {
+        
+        .cards {
+            grid-template-columns: repeat(2, 1fr);
+
+            .card:nth-child(3){
+                display: none;
+            }
+        }
+    }
+}
+
+
+// small phone 460px
+@media (max-width: 460px){
+    
+    .vse-info {
+        
+        .cards {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+
+            .card:nth-child(4){
+                display: none;
+            }
+        }
+    }
+
+}

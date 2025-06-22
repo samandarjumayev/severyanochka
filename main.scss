@@ -21,7 +21,6 @@
 // Kirish layaouts
 @import './layout/kirish';
 
-
 // Page Вакансии layouts
 @import './layout-vakansiya/vakansiya';
 
@@ -31,9 +30,13 @@
 // Page О компании layouts
 @import './layout-o-kompani/o-nas';
 
+// Page Все продукты layouts
+@import './layout-vse-produkt/vse-product'; 
+
 
 
 // Medias
 @import './layout/media';
 @import './layout-vakansiya/media-vakansiya';
 @import './layout-kontakt/media-kontakt';
+@import './layout-vse-produkt/media-vse';
