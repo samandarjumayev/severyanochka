@@ -1,0 +1,56 @@
+.header {
+    .header-joylashuv {
+        .header-info {
+            .head-right {
+                ul {
+                    li:nth-child(3){
+                        a {
+                            color: $main-color-2;
+                            &>i {
+                                color: $main-color-2;
+                                &>i {
+                                    background-color: $text-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.karzina {
+    background-color: $main-bg-color;
+    padding: 20px 0 40px 0;
+}
+.karzina-info {
+
+    .navigatsiya {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        color: $text-color;
+        cursor: context-menu;
+
+        &>a {
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+
+            i {
+                margin-left: 5px;
+            }
+        }
+    }
+
+    &>h2 {
+        margin-bottom: 20px;
+        font-size: 43px;
+        font-weight: 900;
+        color: $text-color;
+        letter-spacing: 0.5px;
+    }
+
+}

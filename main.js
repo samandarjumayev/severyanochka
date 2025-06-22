@@ -1,3 +1,5 @@
+'use strict';
+
 let heart = document.querySelectorAll('.fa-heart');
 heart.forEach(value => {
     value.addEventListener('click', () => {
@@ -14,4 +16,19 @@ heart.forEach(value => {
     })
 });
 
-// <i class="fa-solid fa-heart"></i>
+// Karzinka
+const cartBtn = document.querySelectorAll('.cart');
+
+
+let allDiv = JSON.parse(sessionStorage.getItem('allDiv')) || [];
+cartBtn.forEach(value => {
+    value.addEventListener('click', () => {
+        // let div = value.parentElement.parentElement;
+        // if(!allDiv.includes(div)){
+        //     allDiv.push(div)
+        //     sessionStorage.setItem('allDiv', JSON.stringify(allDiv));
+        // }
+    });
+});
+
+

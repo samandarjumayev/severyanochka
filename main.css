@@ -1419,6 +1419,72 @@
   color: #FF6633;
 }
 
+.vse-nav {
+  background-color: #FBF8EC;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vse-nav > ul {
+  list-style-type: none;
+  display: flex;
+  gap: 35px;
+}
+.vse-nav > ul li:nth-child(3) a {
+  color: #FF6633;
+  font-weight: 700;
+}
+.vse-nav > ul li a {
+  text-decoration: none;
+  color: #414141;
+  font-size: 18px;
+  font-weight: 500;
+}
+.vse-nav > ul li a:hover {
+  color: #FF6633;
+}
+
+.header .header-joylashuv .header-info .head-right ul li:nth-child(3) a {
+  color: #FF6633;
+}
+.header .header-joylashuv .header-info .head-right ul li:nth-child(3) a > i {
+  color: #FF6633;
+}
+.header .header-joylashuv .header-info .head-right ul li:nth-child(3) a > i > i {
+  background-color: #414141;
+}
+
+.karzina {
+  background-color: #FBF8EC;
+  padding: 20px 0 40px 0;
+}
+
+.karzina-info .navigatsiya {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  color: #414141;
+  cursor: context-menu;
+}
+.karzina-info .navigatsiya > a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.karzina-info .navigatsiya > a i {
+  margin-left: 5px;
+}
+.karzina-info > h2 {
+  margin-bottom: 20px;
+  font-size: 43px;
+  font-weight: 900;
+  color: #414141;
+  letter-spacing: 0.5px;
+}
+
 @media (max-width: 950px) {
   .header-info .qidiruv {
     margin: 0 10px;
@@ -1660,6 +1726,9 @@
   .vse-info .cards .card:nth-child(3) {
     display: none;
   }
+  .vse-nav > ul li:nth-child(7), .vse-nav > ul li:nth-child(8), .vse-nav > ul li:nth-child(9), .vse-nav > ul li:nth-child(10) {
+    display: none;
+  }
 }
 @media (max-width: 460px) {
   .vse-info .cards {
@@ -1668,5 +1737,11 @@
   }
   .vse-info .cards .card:nth-child(4) {
     display: none;
+  }
+  .vse-nav ul {
+    gap: 25px;
+  }
+  .vse-nav ul li a {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=main.css.map */

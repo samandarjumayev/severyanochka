@@ -29,6 +29,14 @@
             }
         }
     }
+
+    .vse-nav {
+        &>ul {
+            li:nth-child(7), li:nth-child(8), li:nth-child(9), li:nth-child(10) {
+                display: none;
+            }
+        }
+    }
 }
 
 
@@ -43,6 +51,17 @@
 
             .card:nth-child(4){
                 display: none;
+            }
+        }
+    }
+
+    .vse-nav {
+        ul {
+            gap: 25px;
+            li {
+                a {
+                    font-size: 16px;
+                }
             }
         }
     }

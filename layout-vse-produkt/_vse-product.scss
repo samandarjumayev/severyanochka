@@ -141,3 +141,35 @@
         }
     }
 }
+
+.vse-nav {
+    background-color: $main-bg-color;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &>ul {
+        list-style-type: none;
+        display: flex;
+        gap: 35px;
+
+        li {
+            &:nth-child(3) a{
+                color: $main-color-2;
+                font-weight: 700;
+            }
+
+            a {
+                text-decoration: none;
+                color: $text-color;
+                font-size: 18px;
+                font-weight: 500;
+
+                &:hover {
+                    color: $main-color-2;
+                }
+            }
+        }
+    }
+}
