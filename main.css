@@ -1445,16 +1445,6 @@
   color: #FF6633;
 }
 
-.header .header-joylashuv .header-info .head-right ul li:nth-child(3) a {
-  color: #FF6633;
-}
-.header .header-joylashuv .header-info .head-right ul li:nth-child(3) a > i {
-  color: #FF6633;
-}
-.header .header-joylashuv .header-info .head-right ul li:nth-child(3) a > i > i {
-  background-color: #414141;
-}
-
 .karzina {
   background-color: #FBF8EC;
   padding: 20px 0 40px 0;
