@@ -1,34 +1,49 @@
 'use strict';
 
-let heart = document.querySelectorAll('.fa-heart');
-heart.forEach(value => {
-    value.addEventListener('click', () => {
-        if(value.classList.contains('fa-regular')){
-            value.classList.replace('fa-regular', 'fa-solid');
-            value.setAttribute('style', 'color: #FF6633');
+// Karzinka
+let karzinaCount = localStorage.getItem('karzinaCount') || 0;
+let heartCount = localStorage.getItem('heartCount') || 0;
+
+let karzinaIcon = document.getElementById('karzina-count');
+let heartIcon = document.getElementById('heart-count');
+
+karzinaIcon.textContent = karzinaCount;
+heartIcon.textContent = heartCount;
+
+document.addEventListener('click', (e) => {
+
+    if(e.target.classList.contains('cart')){
+        console.log(e.target.parentElement.parentElement);
+        karzinaIcon.textContent = karzinaCount;
+        localStorage.setItem('karzinaCount', karzinaCount++);
+    }
+
+
+    // Heart || Like
+    if(e.target.classList.contains('fa-heart')){
+
+        if(e.target.classList.contains('fa-regular')){
+            e.target.classList.remove('fa-regular');
+            e.target.classList.add('fa-solid');
+            e.target.style.color = '#FF6633';
+
+            localStorage.setItem('heartCount', heartCount++);
+            heartIcon.textContent = heartCount;
         }else {
-            value.classList.replace('fa-solid', 'fa-regular');
-            value.removeAttribute('style', 'color: #FF6633')
+            e.target.classList.remove('fa-solid');
+            e.target.classList.add('fa-regular');
+            e.target.style.color = '#AFAFB2';
+
+            localStorage.setItem('heartCount', heartCount--);
+            heartIcon.textContent = heartCount;
         }
 
-        console.log(value.parentElement.parentElement);
-        
-    })
-});
+    }
+    
 
-// Karzinka
-const cartBtn = document.querySelectorAll('.cart');
+    e.stopPropagation();
+}, true)
 
 
-let allDiv = JSON.parse(sessionStorage.getItem('allDiv')) || [];
-cartBtn.forEach(value => {
-    value.addEventListener('click', () => {
-        // let div = value.parentElement.parentElement;
-        // if(!allDiv.includes(div)){
-        //     allDiv.push(div)
-        //     sessionStorage.setItem('allDiv', JSON.stringify(allDiv));
-        // }
-    });
-});
-
-
+// localStorage.clear();
+// sessionStorage.clear();

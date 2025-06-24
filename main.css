@@ -234,7 +234,7 @@
 .header-info .head-right .kategory li a:hover {
   color: #FF6633;
 }
-.header-info .head-right .kategory li a:hover > i > i {
+.header-info .head-right .kategory li a:hover > i > p {
   background-color: #414141;
   color: #FF6633;
 }
@@ -242,7 +242,7 @@
   font-size: 20px;
   position: relative;
 }
-.header-info .head-right .kategory li a > i > i {
+.header-info .head-right .kategory li a > i > p {
   background-color: #FF6633;
   color: #fff;
   width: 15px;

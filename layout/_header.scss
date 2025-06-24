@@ -182,7 +182,7 @@
                     &:hover {
                         color: $main-color-2;
 
-                        &>i>i {
+                        &>i>p {
                             background-color: $text-color;
                             color: $main-color-2;
                         }
@@ -192,7 +192,7 @@
                         font-size: 20px;
                         position: relative;
 
-                        &>i {
+                        &>p {
                             background-color: $main-color-2;
                             color: #fff;
                             width: 15px;
