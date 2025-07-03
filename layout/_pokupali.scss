@@ -43,6 +43,10 @@
             background-color: #fff;
             overflow: hidden;
             transition: 0.3s;
+            height: auto;
+            height: auto;
+            display: flex;
+            flex-direction: column;
 
             &:hover {
                 transform: scale(1.05);
@@ -51,7 +55,7 @@
             }
 
             .card-top {
-                height: 45%;
+                flex: 1;
                 display: flex;
                 justify-content: center;
                 padding: 7px 0;
@@ -60,7 +64,7 @@
                 img {
                     object-fit: cover;
                     height: 100%;
-                    width: 80px;
+                    width: 150px;
                 }
                 &>.fa-heart {
                     color: rgb(175, 175, 175);
@@ -77,8 +81,8 @@
             }
 
             .card-bottom {
-                height: 55%;
-                padding: 0 10px;
+                flex: 1;
+                padding: 10px;
 
                 .narx {
                     display: flex;

@@ -411,13 +411,16 @@
   background-color: #fff;
   overflow: hidden;
   transition: 0.3s;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 .aksiya-info .cards .card:hover {
   transform: scale(1.05);
   box-shadow: rgba(255, 94, 0, 0.16) 0px 3px 6px, rgba(255, 60, 0, 0.23) 0px 3px 6px;
 }
 .aksiya-info .cards .card .card-top {
-  height: 45%;
+  flex: 1;
   display: flex;
   justify-content: center;
   padding: 7px 0;
@@ -454,8 +457,8 @@
   letter-spacing: 0.5px;
 }
 .aksiya-info .cards .card .card-bottom {
-  height: 55%;
-  padding: 0 10px;
+  flex: 1;
+  padding: 10px;
 }
 .aksiya-info .cards .card .card-bottom .narx {
   display: flex;
@@ -480,15 +483,6 @@
 }
 .aksiya-info .cards .card .card-bottom .product-rating > i {
   color: rgb(182, 182, 182);
-}
-.aksiya-info .cards .card .card-bottom .product-rating > i:nth-child(1) {
-  color: #FF6633;
-}
-.aksiya-info .cards .card .card-bottom .product-rating > i:nth-child(2) {
-  color: #FF6633;
-}
-.aksiya-info .cards .card .card-bottom .product-rating > i:nth-child(3) {
-  color: #FF6633;
 }
 
 .novinki {
@@ -532,13 +526,16 @@
   background-color: #fff;
   overflow: hidden;
   transition: 0.3s;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 .novinki-info .cards .card:hover {
   transform: scale(1.05);
   box-shadow: rgba(255, 94, 0, 0.16) 0px 3px 6px, rgba(255, 60, 0, 0.23) 0px 3px 6px;
 }
 .novinki-info .cards .card .card-top {
-  height: 45%;
+  flex: 1;
   display: flex;
   justify-content: center;
   padding: 7px 0;
@@ -561,8 +558,8 @@
   cursor: pointer;
 }
 .novinki-info .cards .card .card-bottom {
-  height: 55%;
-  padding: 0 10px;
+  flex: 1;
+  padding: 10px;
 }
 .novinki-info .cards .card .card-bottom .narx {
   display: flex;
@@ -642,13 +639,17 @@
   background-color: #fff;
   overflow: hidden;
   transition: 0.3s;
+  height: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 .pokupali-info .cards .card:hover {
   transform: scale(1.05);
   box-shadow: rgba(255, 94, 0, 0.16) 0px 3px 6px, rgba(255, 60, 0, 0.23) 0px 3px 6px;
 }
 .pokupali-info .cards .card .card-top {
-  height: 45%;
+  flex: 1;
   display: flex;
   justify-content: center;
   padding: 7px 0;
@@ -658,7 +659,7 @@
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
-  width: 80px;
+  width: 150px;
 }
 .pokupali-info .cards .card .card-top > .fa-heart {
   color: rgb(175, 175, 175);
@@ -672,8 +673,8 @@
   cursor: pointer;
 }
 .pokupali-info .cards .card .card-bottom {
-  height: 55%;
-  padding: 0 10px;
+  flex: 1;
+  padding: 10px;
 }
 .pokupali-info .cards .card .card-bottom .narx {
   display: flex;
@@ -1624,32 +1625,32 @@
     font-size: 20px;
   }
   .aksiya {
-    height: 1270px;
+    height: auto;
   }
   .aksiya-info .cards {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
   .aksiya-info .cards .card:nth-child(4) {
     display: none;
   }
   .novinki {
-    height: 1070px;
+    height: auto;
     margin-top: -30px;
   }
   .novinki-info .cards {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
   .novinki-info .cards .card:nth-child(4) {
     display: none;
   }
   .pokupali {
-    height: 1100px;
+    height: auto;
   }
   .pokupali-info .cards {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
   .pokupali-info .cards .card:nth-child(4) {
     display: none;

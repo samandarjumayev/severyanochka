@@ -39,6 +39,7 @@ document.addEventListener('click', (e) => {
         }
 
     }
+
     
 
     e.stopPropagation();

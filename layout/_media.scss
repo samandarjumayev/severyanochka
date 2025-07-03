@@ -234,13 +234,13 @@
     }
 
     .aksiya {
-        height: 1270px;
+        height: auto;
     }
     .aksiya-info {
         
         .cards {
             grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
 
             .card:nth-child(4){
                 display: none;
@@ -249,14 +249,14 @@
     }
 
     .novinki {
-        height: 1070px;
+        height: auto;
         margin-top: -30px;
     }
     .novinki-info {
         
         .cards {
             grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
 
             .card:nth-child(4){
                 display: none;
@@ -265,13 +265,13 @@
     }
 
     .pokupali {
-        height: 1100px;
+        height: auto;
     }
     .pokupali-info {
         
         .cards {
             grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
 
             .card:nth-child(4){
                 display: none;
